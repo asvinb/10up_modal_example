@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="node_modules/@10up/modal/dist/modal.css" rel="stylesheet">
+	</head>
+	<body>
+		<button class="link-like" data-a11y-dialog-show="modal">Open the dialog window</button>
+
+		<div class="dialog TenUp__modal" id="modal">
+			<div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+
+			<dialog class="dialog-content" aria-labelledby="dialogTitle" aria-describedby="dialogDescription">
+				<button data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">&times;</button>
+
+				<h3 id="dialogTitle">Normal Modal Window</h3>
+				<p id="dialogDescription">
+					Content goes here that talks about a thing that you couldn't do in the normal DOM flow for some reason.
+				</p>
+      		</dialog>
+      		<!-- / dialog-content -->
+    	</div>
+    	<!-- / dialog -->
+
+		<script src="index.js" type="text/javascript"></script>
+	</body>
+</html>
